@@ -34,7 +34,7 @@ cacheSolve <- function(x, ...) {
                 message ("Inverse is cached")
                 return (i)
         }
-        message ("Inverse is NOT cached")
+        message ("Inverse is computed and NOT cached")
         data <- x$get()
         i <- solve (data)
         x$setinverse (i)
@@ -50,20 +50,21 @@ solve (z)
 
 #testing with caching function
 zC <- makeCacheMatrix (z)
-cacheSolve(zC)  #compute inverse matrix
-cacheSolve(zC)  #return cached inverse matrix
+cacheSolve(zC)  #compute inverse matrix. Printed message is ("Inverse is computed and NOT cached").
+cacheSolve(zC)  #return cached inverse matrix. Printed message is ("Inverse is cached").
 
   
 
 
 #SECTION for GIT
 #downsteam from a fork git
-#git clone https://github.com/aounihajar/ProgrammingAssignment2.
+#git init
+#git clone https://github.com/rdpeng/ProgrammingAssignment2.git
+#git remote -v
 
 #create a new repo in githib
-#git init
-#git remote add origin https://github.com/aounihajar/ProgrammingAssignment2_modified.git
-#get remote -v
+#git remote add origin https://github.com/aounihajar/ProgrammingAssignment2.git
+#git remote -v
 #git pull origin master --allow-unrelated-histories
 #git add .
 #git commit -m "R Programming, week 3 comment"
