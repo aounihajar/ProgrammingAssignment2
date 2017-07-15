@@ -1,7 +1,3 @@
-<<<<<<< HEAD
-# ProgrammingAssignment2_modified
-This repo is for R Programing course, week 3
-=======
 ### Introduction
 
 This second programming assignment will require you to write an R
@@ -107,4 +103,3 @@ In order to complete this assignment, you must do the following:
 ### Grading
 
 This assignment will be graded via peer assessment.
->>>>>>> upstream/master
